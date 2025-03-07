@@ -1,39 +1,72 @@
 
-import {View, Text, StyleSheet, Image, ImageBackground, ImageBackgroundBase} from 'react-native';
+import { View, Text, StyleSheet, Image, ImageBackground, ImageBackgroundBase, Pressable } from 'react-native';
 
 export default function App() {
-    return(
+    return (
         <ImageBackground
-         style={styles.background} 
-         source={require('../assets/images/ready.jpg')}
-         >
-        <View style={styles.container}>
-            <Text style={styles.title}>Kiss Me Baby !!!</Text>
-            <Image style={styles.image} source={require('../assets/images/sexy.jpeg')} />
-        </View>
-         </ImageBackground>
+            style={styles.background}
+            source={require('../assets/images/projectpic.png')}
+        >
+            <View style={styles.container}>
+
+                <Image style={styles.image} source={require('../assets/images/Logoexp.png')} />
+                <View style={styles.buttonView}>
+                <Text style={styles.title}>Explore a new world with us</Text>
+
+                    <Pressable style={styles.button} onPress={() => alert('This is a button!')}>
+                        <Text style={styles.Text}>Register</Text>
+                    </Pressable>
+
+                    <Pressable style={styles.button} onPress={() => alert('This is a button!')}>
+                        <Text style={styles.Text}>Login</Text>
+                    </Pressable>
+
+                </View>
+            </View>
+        </ImageBackground>
     );
 }
 
 const styles = StyleSheet.create({
     title: {
-        fontSize: 24,
-        color: "blue"
+        fontSize: 50,
+        color: "white"
     },
     container: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
+        justifyContent: "space-between",
+        padding: 40
+
     },
     image: {
-        height: 200,
+        height: 50,
         width: 150
+
     },
     background: {
         flex: 1,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         resizeMode: 'cover',
-        alignItems: 'center'
+    },
+    Text: {
+        fontSize: 25,
+        color: "white",
+
     }
+    ,
+    button: {
+        backgroundColor: "black",
+        borderRadius: 12,
+        alignItems: "center",
+        justifyContent: "",
+
+    }
+    , 
+    buttonView: {
+        gap: 10
+    }
+
 })
+
+
 
