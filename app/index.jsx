@@ -1,7 +1,9 @@
 
 import { View, Text, StyleSheet, Image, ImageBackground, ImageBackgroundBase, Pressable } from 'react-native';
+import { useRouter } from "expo-router";
 
 export default function App() {
+    const router = useRouter()
     return (
         <ImageBackground
             style={styles.background}
@@ -13,7 +15,7 @@ export default function App() {
                 <View style={styles.buttonView}>
                 <Text style={styles.title}>Explore a new world with us</Text>
 
-                    <Pressable style={styles.button} onPress={() => alert('This is a button!')}>
+                    <Pressable style={styles.button} onPress={() => router.push("/screens/auth/register")}>
                         <Text style={styles.Text}>Register</Text>
                     </Pressable>
 
