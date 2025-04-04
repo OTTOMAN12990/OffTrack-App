@@ -19,8 +19,12 @@ export default function App() {
                         <Text style={styles.Text}>Register</Text>
                     </Pressable>
 
-                    <Pressable style={styles.button} onPress={() => alert('This is a button!')}>
+                    <Pressable style={styles.button} onPress={() => router.push("/screens/auth/login")}>
                         <Text style={styles.Text}>Login</Text>
+                    </Pressable>
+
+                    <Pressable style={styles.button} onPress={() => alert('This is a button!')}>
+                        <Text style={styles.Text}>Verder naar de app</Text>
                     </Pressable>
 
                 </View>

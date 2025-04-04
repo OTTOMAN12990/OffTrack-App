@@ -1,7 +1,8 @@
 import { View, Text, StyleSheet, Image, ImageBackground, Pressable, TextInput } from 'react-native';
-
+import { useRouter } from "expo-router";
 
 export default function Register() {
+    const router = useRouter()
     return (
         <ImageBackground
             style={styles.background}
@@ -16,7 +17,7 @@ export default function Register() {
                 <TextInput style={styles.textInput}>Email Adress</TextInput>
                 <TextInput style={styles.textInput}>Password</TextInput>
 
-                    <Pressable style={styles.buttonA} onPress={() => alert('This is a button!')}>
+                    <Pressable style={styles.buttonA} onPress={() => router.push("/screens/auth/login")}>
                         <Text style={styles.Text}>Already have an accoun? Sign in</Text>
                     </Pressable>
 
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
         gap: 10
     },
     textInput: {
-        backgroundColor: "black",
+        backgroundColor: "white",
         borderRadius: 12,
         alignItems: "center",
         justifyContent: "",
@@ -84,7 +85,8 @@ const styles = StyleSheet.create({
         borderRadius: 12,
         alignItems: "center",
         justifyContent: "",
-    }
+    },
+
     
 
 })

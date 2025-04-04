@@ -1,4 +1,4 @@
-import { Stack } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 
 export default function Layout() {
 return (
@@ -7,5 +7,8 @@ return (
 <Stack.Screen name="screens/auth/login" />
 <Stack.Screen name="screens/auth/register" />
 </Stack>
+
+
+
 );
 }
