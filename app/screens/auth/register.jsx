@@ -1,5 +1,6 @@
 import { View, Text, StyleSheet, Image, ImageBackground, Pressable, TextInput } from 'react-native';
 import { useRouter } from "expo-router";
+import {useState} from 'react'
 
 export default function Register() {
     const router = useRouter()

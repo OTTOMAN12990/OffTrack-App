@@ -1,5 +1,6 @@
 import { Ionicons } from '@expo/vector-icons';
 import { Tabs } from 'expo-router';
+import { MaterialCommunityIcons, FontAwesome5, MaterialIcons } from '@expo/vector-icons';
 export default function TabsLayout() {
     return (
         <Tabs
@@ -17,7 +18,7 @@ export default function TabsLayout() {
                 name='home'
                 options={{
                     title: 'Home',
-                    tabBarIcon: () => <Ionicons name='home-outline' size={24} />,
+                    tabBarIcon: () => <MaterialCommunityIcons name='home-roof' size={24} />,
                 }}
             />
 
@@ -25,7 +26,7 @@ export default function TabsLayout() {
                 name='profile'
                 options={{
                     title: 'Profile',
-                    tabBarIcon: () => <Ionicons name='person-outline' size={24} />,
+                    tabBarIcon: () => <FontAwesome5 name='user-tie' size={24} />,
                 }}
             />
 
@@ -33,7 +34,7 @@ export default function TabsLayout() {
                 name='add'
                 options={{
                     title: 'Add',
-                    tabBarIcon: () => <Ionicons name='person-outline' size={24} />,
+                    tabBarIcon: () => <MaterialIcons name='add' size={24} />,
                 }}
             />
 
@@ -41,7 +42,7 @@ export default function TabsLayout() {
                 name='search'
                 options={{
                     title: 'Search',
-                    tabBarIcon: () => <Ionicons name='person-outline' size={24} />,
+                    tabBarIcon: () => <FontAwesome5 name='search-dollar' size={24} />,
                 }}
             />
 
@@ -49,7 +50,7 @@ export default function TabsLayout() {
                 name='notification'
                 options={{
                     title: 'Notification',
-                    tabBarIcon: () => <Ionicons name='person-outline' size={24} />,
+                    tabBarIcon: () => <MaterialIcons name='notifications-active' size={24} />,
                 }}
             />
 
