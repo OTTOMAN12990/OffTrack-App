@@ -16,7 +16,7 @@ export default function ProfileScreen() {
         />
 
         {/* Naam */}
-        <Text style={styles.profileName}>Jouw Naam</Text>
+        <Text style={styles.profileName}>Jason pussydestroyer</Text>
 
         {/* Korte Bio */}
         <Text style={styles.profileBio}>Reiziger | Avonturier | Levensgenieter 🌍</Text>
